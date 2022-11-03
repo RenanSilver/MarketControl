@@ -7,6 +7,7 @@
     tools:context=".ui.activity.AdicionaItensActivity">
 
     <ListView
+        android:id="@+id/adiciona_itens_lista"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/adiciona_itens_bota_concluir"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="concluir"
@@ -23,21 +24,21 @@
         android:layout_margin="8dp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/adiciona_itens_botao_adicionar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/adiciona_itens_botao_adicionar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="adicionar"
         android:textColor="@color/white"
         android:background="#CD0B0B"
         android:layout_margin="8dp"
-        app:layout_constraintStart_toEndOf="@id/button3"
+        app:layout_constraintStart_toEndOf="@id/adiciona_itens_bota_concluir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"

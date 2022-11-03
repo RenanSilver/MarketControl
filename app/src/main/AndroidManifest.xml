@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MarketControl"
         tools:targetApi="31">
         <activity
-            android:name=".FormularioItemActivity"
+            android:name=".ui.activity.FormularioItemActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
