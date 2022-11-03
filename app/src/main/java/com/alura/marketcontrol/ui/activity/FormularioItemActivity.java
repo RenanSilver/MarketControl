@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 import com.alura.marketcontrol.R;
+import com.alura.marketcontrol.model.Item;
 
 public class FormularioItemActivity extends AppCompatActivity {
 
     private EditText campoItem;
     private EditText campoQuantidade;
+    private Item item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,15 @@ public class FormularioItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formulario_item);
 
         inicializacaoDosCampos();
+        preencheItem();
+    }
+
+    private void preencheItem() {
+        String produto = campoItem.getText().toString();
+        String quantidade = campoQuantidade.getText().toString();
+
+        item.setItem(produto);
+        item.setQuantidade(quantidade);
     }
 
     private void inicializacaoDosCampos() {

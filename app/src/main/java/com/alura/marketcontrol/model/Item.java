@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Item implements Serializable {
 
+    private int id = 0;
     private String item;
     private String quantidade;
 
@@ -21,4 +22,9 @@ public class Item implements Serializable {
     public String getItem() {return item;}
 
 
+    public int getId() {return id;}
+
+    public void setId(int id) {this.id = id;}
+
+    public boolean temIdValido() {return id > 0;}
 }
