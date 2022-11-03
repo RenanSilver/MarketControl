@@ -13,6 +13,10 @@ public class Item implements Serializable {
         this.quantidade = quantidade;
     }
 
+    public Item() {
+
+    }
+
     public void setItem(String item){this.item = item;}
 
     public void setQuantidade(String quantidade) {this.quantidade = quantidade;}
