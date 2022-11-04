@@ -26,6 +26,7 @@ public class ItemDAO {
         }
     }
 
+    public List<Item> todos() {return new ArrayList<>(itens);}
 
     private Item buscaItemPeloId(Item item) {
         for (Item a : itens) {
@@ -33,7 +34,15 @@ public class ItemDAO {
                 return a;
             }
         }
-        return item;
+        return null;
+    }
+
+    public void remove(Item item) {
+        Item itemDevolvido = buscaItemPeloId(item);
+        if(itemDevolvido != null){
+            itens.remove(itemDevolvido);
+        }
+
     }
 
 
